@@ -1,0 +1,18 @@
+<template>
+    {ourProperty}
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+            <ul>
+                <template for:each={users} for:item="user">
+                    <li key={user.Id} class="slds-p-vertical_medium">
+                        <c-sixth-list-item user={user} onselecteduseridevent={handleSelectedUserIdEvent}></c-sixth-list-item>
+                    </li>
+                </template>
+            </ul>
+        </div>
+
+        <div class="slds-col" if:true={showDetails}>
+            <c-sixth-display-item user-id={selectedUserId}></c-sixth-display-item>
+        </div>
+    </div>
+</template>

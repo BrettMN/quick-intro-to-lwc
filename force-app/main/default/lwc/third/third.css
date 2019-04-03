@@ -1,0 +1,8 @@
+:host{
+    display: block;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: skyblue;
+    border-style: double;
+    background-color: white;
+}
